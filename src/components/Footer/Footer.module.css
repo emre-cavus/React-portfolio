@@ -1,0 +1,53 @@
+@import "../../vars.css";
+
+.footer {
+  padding: 30px;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  background-color: var(--color-footer-bg);
+}
+
+.footername {
+  display: inline;
+
+  position: relative;
+  margin: auto;
+}
+
+.copyright {
+  display: inline-block;
+  margin-left: 20px;
+  text-align: center;
+}
+
+a {
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+.socialmedia {
+  display: inline-block;
+  position: relative;
+  float: right;
+}
+
+.links {
+  margin-left: 10px;
+  display: block;
+  float: left;
+  padding: 4px;
+  background-color: rgba(255, 255, 255, 0.405);
+  border: 1px solid rgb(71, 71, 71);
+  box-shadow: inset 1px 1px 1em rgba(255, 255, 255, 0.166), 5px 2px 20px 0px black;
+  border-radius: 100%;
+  transition: 250ms;
+}
+
+.links:hover {
+  background-color: aliceblue;
+}
+
+.links img {
+  width: 25px;
+}
