@@ -1,0 +1,63 @@
+@import "../../vars.scss";
+
+.section {
+  padding: 100px;
+  display: block;
+  color: var(--color-text);
+}
+
+.About h1 {
+  color: var(--color-text);
+}
+
+p {
+  color: var(--color-discription);
+  font-size: 18px;
+  text-indent: 13px;
+}
+
+.About {
+  border: 1px solid rgb(71, 71, 71);
+  box-shadow:
+    inset 1px 1px 1em rgba(255, 255, 255, 0.166),
+    5px 2px 20px 0px black;
+
+  display: block;
+  position: relative;
+  margin: auto;
+  margin-bottom: 50px;
+  padding: 30px;
+  width: 70%;
+
+  border-radius: 20px;
+
+  background: linear-gradient(to left, #0b2447, #101010, #0b2447);
+  background-size: 170% 170%;
+  animation-name: gradient;
+  animation: gradient 10s ease infinite alternate;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 100%;
+  }
+
+  50% {
+    background-position: 300% 0%;
+  }
+
+  100% {
+    background-position: 0% 600%;
+  }
+}
+
+hr {
+  color: white;
+  box-shadow:
+    inset 1px 1px 1em rgba(255, 255, 255, 0.166),
+    5px 2px 20px 0px black;
+}
+
+li {
+  color: white;
+}

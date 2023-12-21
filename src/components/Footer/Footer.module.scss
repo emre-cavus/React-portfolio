@@ -1,21 +1,25 @@
-@import "../../vars.css";
+@import "../../vars.scss";
 
 .footer {
+  z-index: 5;
   padding: 30px;
   display: inline-block;
   width: 100%;
-  height: auto;
+  height: 5px;
   background-color: var(--color-footer-bg);
 }
 
 .footername {
-  display: inline;
+  z-index: 5;
 
+  display: inline;
+  color: white;
   position: relative;
   margin: auto;
 }
 
 .copyright {
+  color: rgb(190, 190, 191);
   display: inline-block;
   margin-left: 20px;
   text-align: center;
@@ -37,17 +41,21 @@ a {
   display: block;
   float: left;
   padding: 4px;
-  background-color: rgba(255, 255, 255, 0.405);
+  background-color: rgba(255, 255, 255, 0.554);
   border: 1px solid rgb(71, 71, 71);
-  box-shadow: inset 1px 1px 1em rgba(255, 255, 255, 0.166), 5px 2px 20px 0px black;
-  border-radius: 100%;
+  box-shadow:
+    inset 1px 1px 1em rgba(255, 255, 255, 0.166),
+    5px 2px 20px 0px black;
+  border-radius: 50%;
   transition: 250ms;
 }
 
 .links:hover {
   background-color: aliceblue;
+  width: 30px;
 }
 
-.links img {
-  width: 25px;
+img {
+  display: block;
+  width: 20px;
 }

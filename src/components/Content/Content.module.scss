@@ -1,0 +1,205 @@
+@import "../../vars.scss";
+
+.section {
+  padding: 100px;
+  display: block;
+  color: var(--color-text);
+
+  p {
+    color: var(--color-discription);
+    /*filter: brightness(1.75); */
+  }
+}
+
+.name {
+  margin-bottom: 50px;
+  z-index: 5;
+  display: inline-block;
+  position: relative;
+  margin-left: 5%;
+  padding: 20px;
+  width: 70%;
+  border-radius: 20px;
+
+  background: linear-gradient(to left, #0b2447, #101010, #0b2447);
+  background-size: 170% 170%;
+  animation-name: gradient;
+  animation: gradient 10s ease infinite alternate;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 100%;
+  }
+
+  50% {
+    background-position: 300% 0%;
+  }
+
+  100% {
+    background-position: 0% 600%;
+  }
+}
+
+.name2 {
+  z-index: 5;
+
+  display: grid;
+  margin: auto;
+  margin-bottom: 50px;
+  padding: 20px;
+  width: 70%;
+  border-radius: 20px;
+  background: linear-gradient(to left, #0b2447, #101010, #0b2447);
+  background-size: 170% 170%;
+  animation-name: gradient;
+  animation: gradient 10s ease infinite alternate;
+}
+
+.name3 {
+  z-index: 5;
+
+  display: grid;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 20px;
+  width: 70%;
+  border-radius: 20px;
+  background: linear-gradient(to left, #0b2447, #101010, #0b2447);
+  background-size: 170% 170%;
+  animation-name: gradient;
+  animation: gradient 10s ease infinite alternate;
+}
+
+.name3 img {
+  filter: invert(100%);
+  fill: #868686;
+}
+
+.name a {
+  border: 1px solid rgb(71, 71, 71);
+  box-shadow:
+    inset 1px 1px 1em rgba(255, 255, 255, 0.166),
+    5px 2px 20px 0px black;
+  margin: 5px;
+  border-radius: 50px;
+  padding: 5px 15px;
+  background: black;
+  width: 50px;
+  transition: 1s;
+}
+
+h1 {
+  z-index: 5;
+}
+
+.name a:hover {
+  background: linear-gradient(to left, #416890, #5280ae);
+  border: 1px solid rgb(71, 71, 71);
+  box-shadow:
+    inset 1px 1px 1em rgba(255, 255, 255, 0.166),
+    5px 2px 20px 0px black;
+}
+
+.profile {
+  z-index: 2;
+  background-color: #101010;
+  display: -webkit-inline-flex;
+  position: relative;
+  border-radius: 50%;
+  border: 1px solid rgb(71, 71, 71);
+  box-shadow:
+    inset 1px 1px 1em rgba(255, 255, 255, 0.166),
+    5px 2px 20px 0px black;
+  width: 10em;
+  height: 10em;
+  animation: myfirst 1s linear 2s infinite alternate;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-direction: reverse;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes example {
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, 15px);
+  }
+
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+.profile img {
+  display: block;
+  position: relative;
+  width: 8em;
+  margin: auto;
+}
+
+.codeSkills {
+  display: block;
+  position: relative;
+  width: auto;
+}
+
+.coding {
+  position: relative;
+  font-size: 10px;
+  float: inline-start;
+  min-height: 250px;
+  text-align: center;
+  width: 180px;
+  display: flex;
+  margin-left: 10px;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.517);
+  filter: grayscale(100%);
+    transition: 250ms;
+
+  border: 1px solid rgb(71, 71, 71);
+  box-shadow:
+    inset 1px 1px 1em rgba(255, 255, 255, 0.166),
+    5px 2px 20px 0px black;
+}
+
+.coding h1 {
+  padding: 20px;
+  display: block;
+  margin: auto;
+  position: relative;
+  font-size: 25px;
+  bottom: 0;
+}
+
+.coding img {
+  display: block;
+  margin: auto;
+  width: 100px;
+  transition: 250ms;
+  margin-bottom: 10px;
+}
+
+.coding:hover {
+  cursor: pointer;
+  filter: grayscale(0);
+}
+
+.coding img:hover {
+  filter: drop-shadow(0 0 0.5rem rgb(198, 198, 198));
+}
+
+/* Cursor */
+.txt-type > .txt {
+  background-color: #0b2447;
+  border-right: 0.2rem solid #777;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}

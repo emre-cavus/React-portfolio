@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import styles from "./Content.module.css";
+import styles from "./Content.module.scss";
+
 export const Content = () => {
   return (
     <section>
@@ -8,10 +9,11 @@ export const Content = () => {
           <img src="./assets/profile/pp.png" />
         </div>
         <div className={styles.name}>
-          <h1> Hi, I'm Emre</h1>
+          <h1> Hi, I'm 👋 Emre</h1>
           <p className={styles.paragraph}>Software engineer - Computer Scientist - Digiral Designer</p>
           <a href="mailto:cavus.emre5563@gmail.com">Mail links</a>
-          <a href="www.github.com">Github Profile</a>
+          <a href="https://github.com/emre-cavus">Github Profile</a>
+          <a href="https://stackoverflow.com/users/18870780/jespster">Stack Overflow Profile</a>
         </div>
 
         <div className={styles.name2}>

@@ -1,0 +1,41 @@
+.head {
+  top: 0;
+  left: 15%;
+  display: inline-block;
+  position: relative;
+  border-radius: 50px;
+  padding: 5px 20px 5px 20px;
+  background-color: var(--color-bg);
+
+  h1 {
+    color: white;
+  }
+}
+.skillBox {
+  width: 150px;
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0.37);
+  top: 50px;
+  left: 20%;
+  margin-left: 10px;
+  border-radius: 20px;
+  display: inline-block;
+  position: relative;
+  padding: 20px;
+  transition: 1s;
+  &:hover {
+    box-shadow:
+      inset 1px 1px 1em rgba(255, 255, 255, 0.166),
+      5px 2px 20px 0px black;
+    transition: all ease;
+  }
+  img {
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 100px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}

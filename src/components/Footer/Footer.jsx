@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "./Footer.module.css";
+import styles from "./Footer.module.scss";
 /*
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faGithub, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
@@ -9,8 +9,7 @@ export const Footer = () => {
     <div className={styles.footer}>
       <div className={styles.footername}>Emre Cavus</div>
       <div className={styles.copyright}>
-        Copyright@2023
-      </div>
+        © 2023 JesPster. All rights reserved</div>
       <div className={styles.socialmedia}>
         <div className={styles.links}>
           <a href="#">

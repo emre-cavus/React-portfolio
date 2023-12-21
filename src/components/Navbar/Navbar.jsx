@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import styles from "./Navbar.module.css";
-import { getImageUrl } from "../../utils";
+import styles from "./Navbar.module.scss";
 
 export const Navbar = () => {
   return (
@@ -10,19 +9,21 @@ export const Navbar = () => {
         JesPster
       </a>
       <div className={styles.menu}>
-        <img className={styles.menuBtn} src='' alt="" />
         <ul className={styles.menuItems}>
           <li>
-            <a href="#about">About</a>
+            <a className={styles.navlinks} href="#about">About</a>
           </li>
           <li>
-            <a href="#experience">Experience</a>
+            <a className={styles.navlinks} href="#experience">Experience</a>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <a className={styles.navlinks} href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a className={styles.navlinks} href="#skills">Skills</a>
+          </li>
+          <li>
+            <a className={styles.navlinks} href="#design">Design</a>
           </li>
         </ul>
       </div>
